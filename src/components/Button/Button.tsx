@@ -51,7 +51,7 @@ const Button: React.FC<ButtonProps> = ({
       size={size}
       {...props}
     >
-      {text}
+      "dilip"
     </StyledButton>
   );
 };

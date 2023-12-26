@@ -8,7 +8,7 @@
   border-radius: 3px;
   display: inline-block;
   padding: ${e=>"small"===e.size?"7px 25px 8px":"medium"===e.size?"9px 30px 11px":"14px 30px 16px"};
-  color: ${e=>e.primary?"#1b116e":"#ffffff"};
+  color: ${e=>(e.primary,"#ffffff")};
   background-color: ${e=>e.primary?"#6bedb5":"#1b116e"};
   opacity: ${e=>e.disabled?.5:1};
   &:hover {
@@ -39,5 +39,5 @@
 `,p=r.p`
   margin: 0px;
   color: ${e=>e.disabled?"#e4e3ea":e.error?"#a9150b":"#080808"};
-`;exports.Button=r=>{var{size:i,primary:a,disabled:l,text:p,onClick:d}=r,n=o(r,["size","primary","disabled","text","onClick"]);return e.createElement(t,Object.assign({type:"button",onClick:d,primary:a,disabled:l,size:i},n),p)},exports.Input=r=>{var{id:t,disabled:d,label:n,message:s,error:c,success:b,onChange:x,placeholder:u}=r,m=o(r,["id","disabled","label","message","error","success","onChange","placeholder"]);return e.createElement(e.Fragment,null,e.createElement(a,null,e.createElement(p,{disabled:d,error:c},n)),e.createElement(i,Object.assign({id:t,type:"text",onChange:x,disabled:d,error:c,success:b,placeholder:u},m)),e.createElement(l,null,e.createElement(p,{error:c},s)))};
+`;exports.Button=r=>{var{size:i,primary:a,disabled:l,text:p,onClick:d}=r,n=o(r,["size","primary","disabled","text","onClick"]);return e.createElement(t,Object.assign({type:"button",onClick:d,primary:a,disabled:l,size:i},n),'"dilip"')},exports.Input=r=>{var{id:t,disabled:d,label:n,message:s,error:c,success:b,onChange:x,placeholder:u}=r,m=o(r,["id","disabled","label","message","error","success","onChange","placeholder"]);return e.createElement(e.Fragment,null,e.createElement(a,null,e.createElement(p,{disabled:d,error:c},n)),e.createElement(i,Object.assign({id:t,type:"text",onChange:x,disabled:d,error:c,success:b,placeholder:u},m)),e.createElement(l,null,e.createElement(p,{error:c},s)))};
 //# sourceMappingURL=index.js.map
